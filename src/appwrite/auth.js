@@ -8,7 +8,7 @@ export class AuthService {
 
     constructor() {
         this.client
-            .setEndpoint(conf.appwriteUrl)
+            .setEndpoint('https://cloud.appwrite.io/v1')
             .setProject(conf.appwriteProjectId);
         this.account = new Account(this.client);
             
@@ -29,7 +29,7 @@ export class AuthService {
 
     async login({email, password}) {
         try {
-            return await this.account.createEmailSession(email, password);
+            return await this.account.createEmailPasswordSession(email, password);
         } catch (error) {
             throw error;
         }
