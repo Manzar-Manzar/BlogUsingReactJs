@@ -87,7 +87,7 @@ export class Service{
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
-                
+                100,
 
             )
         } catch (error) {

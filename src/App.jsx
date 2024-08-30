@@ -28,7 +28,8 @@ function App() {
     
     <div className='min-h-screen flex flex-wrap content-between bg-gray-400'
     style={{
-      margin: '0 -2.2rem'
+      margin: '0 -3.5rem',
+      marginBottom: '-2rem'
      }}>
       <div className='w-full block'>
         <Header />
