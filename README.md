@@ -1,1 +1,1 @@
-This project is made using ReactJS mainly.
+This project is made using ReactJS and appwrite.
